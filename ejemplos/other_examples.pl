@@ -68,6 +68,12 @@ opuesto(X, Y) :-
 %L = [-1, 2, -3, -12, 1000, 0] .
 
 
+natural(C) :-
+    integer(C),
+    C >= 0.
+
+todos_nat(L) :-
+    map(natural, L).
 
 % Predicado para verificar si un número es múltiplo de N
 multiplo(N, X) :-
@@ -75,6 +81,8 @@ multiplo(N, X) :-
 
 % Predicado para separar los múltiplos de N de una lista de números
 separaMultiplosN(L, N, LMN, R) :-
+    todos_nat(L),
+    natural(N),
     filter(multiplo(N), L, LMN),
     excluye(multiplo(N), L, R).
 
@@ -85,3 +93,6 @@ separaMultiplosN(L, N, LMN, R) :-
 %?- separaMultiplosN([1,2,3,4,5,6],3,LSi, LNo).
 %LSi = [6, 3],
 %LNo = [1, 2, 4, 5]
+
+%?- separaMultiplosN([1,2,3,4,5,6.4],3,LSi, LNo).
+%false.
