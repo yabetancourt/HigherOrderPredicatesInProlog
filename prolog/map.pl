@@ -6,14 +6,11 @@
 % L, que es una lista de elementos.
 % Este predicado aplica el  predicado Obj a cada elemento de la lista L
 % Devuelve true si todos los elementos de la lista cumplen con obj.
-map(Obj, L):-
-    map_aux(Obj, L, []).
+map(_, []).
 
-map_aux(_, [], _).
-
-map_aux(Obj, [H|T], R) :-
+map(Obj, [H|T]) :-
     call(Obj, H),
-    map_aux(Obj, T, R).
+    map(Obj, T).
 
 % map(Obj, L1, L2) es un predicado que toma tres argumentos:
 % Obj, que es un predicado de dos argumentos;
