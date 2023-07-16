@@ -3,7 +3,7 @@
 :- module(reduce,[reduce/4]).
 
 % reduce(F, L, Acc, Result) es un procedimiento que toma cuatro argumentos:
-% F, que es un predicado de tres argumentos;
+% F, que es un predicado;
 % L, que es una lista de elementos;
 % Acc, que es un acumulador inicial;
 % Result, que es el resultado final de aplicar el predicado F a los elementos de la lista.

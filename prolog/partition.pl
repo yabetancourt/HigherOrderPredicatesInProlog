@@ -3,7 +3,7 @@
 :- module(partition,[partition/4]).
 
 % El predicado partition toma cuatro argumentos:
-% Obj, una función de un argumento que se utilizará para particionar la lista,
+% Obj, un predicado que se utilizará para particionar la lista,
 % R1, una lista de elementos,
 % R2, donde se guarda el resultado.
 % R3, donde se guarda el resultado.

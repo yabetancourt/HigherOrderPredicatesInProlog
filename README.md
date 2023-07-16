@@ -1,5 +1,7 @@
 # Higher Order Predicates in Prolog
 
+**By Yadier Betancourt**
+
 ## Introduction
 
 Higher order predicates are a very useful tool in Prolog for building generic and reusable predicates. They allow encapsulating common goals and applying them in a parametric way over lists. In this work, their application is studied for frequent operations on lists, which allows simplifying and improving the resulting Prolog code.
