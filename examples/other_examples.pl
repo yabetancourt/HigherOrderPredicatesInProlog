@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- use_module('prolog/map').
 :- use_module('prolog/filter').
 

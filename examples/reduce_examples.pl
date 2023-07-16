@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- use_module('prolog/reduce').
 
 % Predicado para sumar dos números

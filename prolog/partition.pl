@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- module(partition,[partition/4]).
 
 % El predicado partition toma cuatro argumentos:

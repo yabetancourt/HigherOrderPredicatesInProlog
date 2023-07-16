@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- module(map,[map/2, map/3]).
 
 

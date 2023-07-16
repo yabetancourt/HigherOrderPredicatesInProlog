@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- use_module('prolog/partition').
 
 es_par(N) :- N mod 2 =:= 0.

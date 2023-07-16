@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- module(filter,[filter/3, excluye/3]).
 
 

@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- module(reduce,[reduce/4]).
 
 % reduce(F, L, Acc, Result) es un procedimiento que toma cuatro argumentos:

@@ -1,3 +1,5 @@
+% Author: Yadier Betancourt
+
 :- use_module('prolog/filter').
 
 % Predicado para verificar si un número es par
